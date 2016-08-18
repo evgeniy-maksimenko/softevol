@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+			
+	<div id="customersModule">
+		<h1>Customers</h1>
+		<form id="customerForm">
+			<input type="hidden" id="index">
+			<input id="name" type="text" name="name" placeholder="name">
+			<input id="email" type="email" name="email" placeholder="email">
+
+			<button id="create">Create</button>
+			<button id="update">Update</button>
+		</form>
+		
+		<ul id="customers">
+			<script id="customers-template" type="text/template">
+				{{#customers}}
+					<li>
+						<span>{{name}}</span>
+						<span>{{email}}</span>
+						<i class="edit"><span class="glyphicon glyphicon-edit"></span></i>
+						<i class="del"><span class="glyphicon glyphicon-remove-circle"></span></i>
+					</li>
+				{{/customers}}
+			</script>
+		</ul>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+	
+	<script src="events.js"></script>
+	<script src="model.js"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>
