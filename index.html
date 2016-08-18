@@ -13,6 +13,14 @@
 			<input type="hidden" id="index">
 			<input id="name" type="text" name="name" placeholder="name">
 			<input id="email" type="email" name="email" placeholder="email">
+			<input id="telephone" type="tel" name="telephone" placeholder="telephone">
+			<input id="address" type="text" name="address" placeholder="address">
+
+			
+			<input id="street" type="text" name="street" placeholder="street">
+			<input id="city" type="text" name="city" placeholder="city">
+			<input id="state" type="text" name="state" placeholder="state">
+			<input id="zip" type="text" name="zip" placeholder="zip">
 
 			<button id="create">Create</button>
 			<button id="update">Update</button>
@@ -24,6 +32,13 @@
 					<li>
 						<span>{{name}}</span>
 						<span>{{email}}</span>
+						<span>{{telephone}}</span>
+						<span>{{address}}</span>
+
+						<span>{{street}}</span>
+						<span>{{city}}</span>
+						<span>{{state}}</span>
+						<span>{{zip}}</span>
 						<i class="edit"><span class="glyphicon glyphicon-edit"></span></i>
 						<i class="del"><span class="glyphicon glyphicon-remove-circle"></span></i>
 					</li>
@@ -35,8 +50,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
 	
 	<script src="events.js"></script>
-	<script src="model.js"></script>
+	<script src="model.js"></script>	
+	<script src="list.js"></script>
+	<script src="create.js"></script>
+	<script src="update.js"></script>
+	<script src="delete.js"></script>
 	<script src="app.js"></script>
-
 </body>
 </html>
